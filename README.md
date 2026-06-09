@@ -1,27 +1,75 @@
+[update-readmes]   Mode: rewrite — migrating to template structure...
 # codex-app
 
-![Codex app screenshot](docs/images/codex-app-screenshot.png)
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/codex-app)
 
-Codex desktop app packaging and release repository.
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-This repo tracks the Linux packaging pipeline for Codex and publishes installable release artifacts.
+## Architecture
 
-## Layout
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-- `desktop/`: Electron Forge workspace used to build Linux release packages
-- `codex/`: canonical current upstream payload root used for the active Linux refresh line
+## Install
 
-GitHub release artifacts:
-- Install from GitHub Releases using packaged artifacts (`.AppImage` / `.deb` / `.rpm`).
-- Built Linux installers are release-only outputs and are not tracked in git.
-- Current Linux artifact versioning follows the embedded Electron app version `26.422.21647`; the embedded build number is `2056`.
-- Release tags like `v26.422.21647` trigger `.github/workflows/linux-release.yml`.
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-Arch Linux / Yay:
-- AUR metadata lives in `packaging/aur/openai-codex-desktop-bin`.
-- The AUR package is a `-bin` package that downloads the published GitHub `.deb`, verifies its SHA-256, and repackages it for pacman.
-- Do not commit generated AUR source downloads or `*.pkg.tar.*` package outputs.
+```bash
+git clone https://github.com/Interested-Deving-1896/codex-app.git
+cd codex-app
+```
 
-## Notes
+## Usage
 
-- Built installers and packaging outputs are release artifacts and should not be committed to git.
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/codex-app`](https://github.com/Interested-Deving-1896/codex-app) and mirrored through:
+
+```
+Interested-Deving-1896/codex-app  ──►  OpenOS-Project-OSP/codex-app  ──►  OpenOS-Project-Ecosystem-OOC/codex-app
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+<!-- License not detected — add a LICENSE file to this repo. -->
+<!-- AI:end:license -->
